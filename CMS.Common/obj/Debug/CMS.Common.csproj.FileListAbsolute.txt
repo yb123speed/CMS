@@ -1,0 +1,5 @@
+F:\GitHub\CMS\CMS.Common\bin\Debug\CMS.Common.dll
+F:\GitHub\CMS\CMS.Common\bin\Debug\CMS.Common.pdb
+F:\GitHub\CMS\CMS.Common\obj\Debug\CMS.Common.csprojResolveAssemblyReference.cache
+F:\GitHub\CMS\CMS.Common\obj\Debug\CMS.Common.dll
+F:\GitHub\CMS\CMS.Common\obj\Debug\CMS.Common.pdb

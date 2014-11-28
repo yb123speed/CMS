@@ -1,0 +1,7 @@
+F:\GitHub\CMS\CMS.DAL\obj\Debug\CMS.DAL.csprojResolveAssemblyReference.cache
+F:\GitHub\CMS\CMS.DAL\bin\Debug\CMS.DAL.dll
+F:\GitHub\CMS\CMS.DAL\bin\Debug\CMS.DAL.pdb
+F:\GitHub\CMS\CMS.DAL\bin\Debug\CMS.Model.dll
+F:\GitHub\CMS\CMS.DAL\bin\Debug\CMS.Model.pdb
+F:\GitHub\CMS\CMS.DAL\obj\Debug\CMS.DAL.dll
+F:\GitHub\CMS\CMS.DAL\obj\Debug\CMS.DAL.pdb
