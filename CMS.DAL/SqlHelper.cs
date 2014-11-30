@@ -14,7 +14,7 @@ namespace CMS.DAL
     {
         private static readonly string connStr = ConfigurationManager.ConnectionStrings["ConnStr"].ConnectionString;
 
-        public static DataTable GeTable(string sql,CommandType commandType,params SqlParameter[] pms)
+        public static DataTable GetTable(string sql,CommandType commandType,params SqlParameter[] pms)
         {
             using (SqlConnection conn = new SqlConnection(connStr))
             {
@@ -45,6 +45,23 @@ namespace CMS.DAL
                     }
                     conn.Open();
                     return cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public static object ExecuteScalar(string sql, CommandType commandType, params SqlParameter[] pms)
+        {
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.CommandType = commandType;
+                    if (pms != null)
+                    {
+                        cmd.Parameters.AddRange(pms);
+                    }
+                    conn.Open();
+                    return cmd.ExecuteScalar();
                 }
             }
         }

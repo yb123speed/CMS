@@ -3,3 +3,7 @@ F:\GitHub\CMS\CMS.BLL\bin\Debug\CMS.BLL.pdb
 F:\GitHub\CMS\CMS.BLL\obj\Debug\CMS.BLL.csprojResolveAssemblyReference.cache
 F:\GitHub\CMS\CMS.BLL\obj\Debug\CMS.BLL.dll
 F:\GitHub\CMS\CMS.BLL\obj\Debug\CMS.BLL.pdb
+F:\GitHub\CMS\CMS.BLL\bin\Debug\CMS.DAL.dll
+F:\GitHub\CMS\CMS.BLL\bin\Debug\CMS.Model.dll
+F:\GitHub\CMS\CMS.BLL\bin\Debug\CMS.DAL.pdb
+F:\GitHub\CMS\CMS.BLL\bin\Debug\CMS.Model.pdb

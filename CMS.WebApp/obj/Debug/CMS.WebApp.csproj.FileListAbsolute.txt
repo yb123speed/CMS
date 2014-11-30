@@ -43,3 +43,9 @@ F:\GitHub\CMS\CMS.WebApp\obj\Debug\CMS.WebApp.dll
 F:\GitHub\CMS\CMS.WebApp\obj\Debug\CMS.WebApp.pdb
 F:\GitHub\CMS\CMS.WebApp\bin\CMS.Common.dll
 F:\GitHub\CMS\CMS.WebApp\bin\CMS.Common.pdb
+F:\GitHub\CMS\CMS.WebApp\bin\CMS.BLL.dll
+F:\GitHub\CMS\CMS.WebApp\bin\CMS.Model.dll
+F:\GitHub\CMS\CMS.WebApp\bin\CMS.DAL.dll
+F:\GitHub\CMS\CMS.WebApp\bin\CMS.BLL.pdb
+F:\GitHub\CMS\CMS.WebApp\bin\CMS.Model.pdb
+F:\GitHub\CMS\CMS.WebApp\bin\CMS.DAL.pdb

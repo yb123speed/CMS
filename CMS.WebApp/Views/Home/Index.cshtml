@@ -1,0 +1,101 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/Content/themes/icon.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.easyui.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            binClickEvent();
+        });
+        function binClickEvent() {
+            //绑定超链接点击事件
+            $('.detailLink123').click(function () {
+                var title = $(this).text();
+                var url = $(this).attr("url");
+                var isExists = $('#tt').tabs('exists',title);//判断选项卡是否存在
+                if(isExists) {
+                    $('#tt').tabs('select', title);
+                    return;
+                }
+                $('#tt').tabs('add', {
+                    title: title,
+                    content: showContent(url),
+                    closable: true
+                });
+            });
+        }
+        //页签显示内容
+        function showContent(url) {
+            var strHtml = '<iframe src="' + url + '" scrolling="no" width="100%" height="100%" frameborder="0"></iframe>';
+            return strHtml;
+        }
+    </script>
+</head>
+<body class="easyui-layout">
+    <!--布局上部分-->
+    <div data-options="region:'north',border:false" style="height:60px;background:#B3DFDA;padding:10px">north region</div>
+    <!--布局上部分-->
+    <!--布局左部分-->
+    <div data-options="region:'west',split:true,title:'West'" style="width:150px;padding:1px;">
+        <div class="easyui-accordion" style="width:auto;height:auto;">
+            <div title="新闻管理" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
+                <a href="javascript:void(0)" class="detailLink123" url="/AdminNewList/Index">新闻管理</a>
+
+            </div>
+            <div title="评论管理" data-options="iconCls:'icon-help'" style="padding:10px;">
+                <a href="javascript:void(0)" class="detailLink123">评论管理</a>
+            </div>
+            <div title="菜单树" data-options="iconCls:'icon-search'" style="padding:10px;">
+                <ul class="easyui-tree">
+                    <li>
+                        <span>Foods</span>
+                        <ul>
+                            <li>
+                                <span>Fruits</span>
+                                <ul>
+                                    <li>apple</li>
+                                    <li>orange</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Vegetables</span>
+                                <ul>
+                                    <li>tomato</li>
+                                    <li>carrot</li>
+                                    <li>cabbage</li>
+                                    <li>potato</li>
+                                    <li>lettuce</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--布局左部分-->
+    <!--布局右部分-->
+    <!--
+        <div data-options="region:'east',split:true,collapsed:true,title:'East'" style="width:100px;padding:10px;">east region</div>
+         -->
+    <!--布局右部分-->
+    <!--布局下部分-->
+    <div data-options="region:'south',border:false" style="height: 30px; background: #A9FACD; padding: 10px; text-align:center;">版权所有  &copy;  Yebin</div>
+    <!--布局下部分-->
+    <!--布局中部分-->
+    <div data-options="region:'center',title:'Center'">
+        <div id="tt" class="easyui-tabs" style="width:auto;height:auto" fit="true">
+        </div>
+    </div>
+    <!--布局中部分-->
+</body>
+</html>

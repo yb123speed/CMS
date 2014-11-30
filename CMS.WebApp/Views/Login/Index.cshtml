@@ -20,8 +20,15 @@
             $("#img").attr("src", $("#img").attr("src") + 1);
         }
 
-        function afterLogin() {
-            
+        function afterLogin(data) {
+            var serverData = data.split(":");
+            if (serverData[0] == "ok") {
+                window.location.href="/Home/Index";
+            }else if (serverData[0] == "no") {
+                $("#errorMsg").text(serverData[1]);
+            } else {
+                $("#errorMsg").text(serverData[1]);
+            }
         }
     </script>
     <style type="text/css">
@@ -194,7 +201,7 @@
                             验证码：
                         </td>
                         <td align="left">
-                            <input type="text" class="login-text" id="code" name="vCode" value="1" />
+                            <input type="text" class="login-text" id="vcode" name="vCode" />
                         </td>
                     </tr>
                     <tr>
@@ -235,7 +242,7 @@
             </div>
         </div>
         <div id="logincopyright">
-            Copyright ? 2012 Yilian.com
+            Copyright&reg;2012 Yebin
         </div>
     </div>
 </body>
